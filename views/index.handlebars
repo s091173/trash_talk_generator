@@ -1,0 +1,59 @@
+<!--  ./views/index.handlebars -->
+<div class="container py-5">
+
+  <form method="POST" action="/">
+
+    <div class="row justify-content-between">
+      {{!-- engineer --}}
+      <div class="col-sm-3">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+            class="card-img-top" alt="engineer-image" height="200">
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" id="engineer" name="engineer" {{#if options.engineer}}
+              checked {{/if}}>
+            <label class="form-check-label" for="engineer">
+              工程師
+            </label>
+          </div>
+        </div>
+      </div>
+      {{!-- designer --}}
+      <div class="col-sm-3">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+            class="card-img-top" alt="designer-image" height="200">
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" id="designer" name="designer" {{#if options.designer}}
+              checked {{/if}}>
+            <label class="form-check-label" for="designer">
+              設計師
+            </label>
+          </div>
+        </div>
+      </div>
+      {{!-- entrepreneur --}}
+      <div class="col-sm-3">
+        <div class="card text-center" style="width: 18rem;">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+            class="card-img-top" alt="entrepreneur-image" height="200">
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" id="entrepreneur" name="entrepreneur"
+              {{#if options.entrepreneur}} checked {{/if}}>
+            <label class="form-check-label" for="entrepreneur">
+              創業家
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-between mt-5">
+      <button class="btn btn-dark" style="height: 50px;" type="submit"><span
+          style="font-size: large;">產生幹話</span></button>
+      <textarea rows="3" style="width: 75%;">{{trashTalk}}</textarea>
+    </div>
+  </form>
+</div>
