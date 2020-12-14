@@ -12,7 +12,7 @@
 
           <div class="form-check my-2">
             <input class="form-check-input" type="radio" id="option-engineer" name="option" value="engineer"
-              {{#if options.engineer}} checked {{/if}}>
+              {{#ifEqual job 'engineer'}} checked {{/ifEqual}}>
             <label class="form-check-label" for="engineer">
               工程師
             </label>
@@ -27,7 +27,7 @@
 
           <div class="form-check my-2">
             <input class="form-check-input" type="radio" id="option-designer" name="option" value="designer"
-              {{#if options.designer}} checked {{/if}}>
+              {{#ifEqual job 'designer'}} checked {{/ifEqual}}>
             <label class="form-check-label" for="designer">
               設計師
             </label>
@@ -42,7 +42,7 @@
 
           <div class="form-check my-2">
             <input class="form-check-input" type="radio" id="option-entrepreneur" name="option" value="entrepreneur"
-              {{#if options.entrepreneur}} checked {{/if}}>
+              {{#ifEqual job 'entrepreneur'}} checked {{/ifEqual}}>
             <label class="form-check-label" for="entrepreneur">
               創業家
             </label>

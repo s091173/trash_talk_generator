@@ -4,7 +4,7 @@ function sample(array) {
   return array[randomIndex]
 }
 
-function generateTrashTalk(options) {
+function generateTrashTalk(job) {
   // data
   const target = {
     engineer: '工程師',
@@ -21,15 +21,15 @@ function generateTrashTalk(options) {
   const phrase = ['很簡單', '很容易', '很快', '很正常']
 
   let data = ''
-  if (options.engineer === 'on') {
+  if (job === 'engineer') {
     data = (`身為一個${target.engineer}, ${sample(task.engineer)}, ${sample(phrase)}吧!`)
   }
 
-  if (options.designer === 'on') {
+  if (job === 'designer') {
     data = (`身為一個${target.designer}, ${sample(task.designer)}, ${sample(phrase)}吧!`)
   }
 
-  if (options.entrepreneur === 'on') {
+  if (job === 'entrepreneur') {
     data = (`身為一個${target.entrepreneur}, ${sample(task.entrepreneur)}, ${sample(phrase)}吧!`)
   }
   return data
