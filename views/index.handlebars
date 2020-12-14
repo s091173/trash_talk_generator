@@ -11,8 +11,8 @@
             class="card-img-top" alt="engineer-image" height="200">
 
           <div class="form-check my-2">
-            <input class="form-check-input" type="checkbox" id="engineer" name="engineer" {{#if options.engineer}}
-              checked {{/if}}>
+            <input class="form-check-input" type="radio" id="option-engineer" name="option" value="engineer"
+              {{#if options.engineer}} checked {{/if}}>
             <label class="form-check-label" for="engineer">
               工程師
             </label>
@@ -26,8 +26,8 @@
             class="card-img-top" alt="designer-image" height="200">
 
           <div class="form-check my-2">
-            <input class="form-check-input" type="checkbox" id="designer" name="designer" {{#if options.designer}}
-              checked {{/if}}>
+            <input class="form-check-input" type="radio" id="option-designer" name="option" value="designer"
+              {{#if options.designer}} checked {{/if}}>
             <label class="form-check-label" for="designer">
               設計師
             </label>
@@ -41,7 +41,7 @@
             class="card-img-top" alt="entrepreneur-image" height="200">
 
           <div class="form-check my-2">
-            <input class="form-check-input" type="checkbox" id="entrepreneur" name="entrepreneur"
+            <input class="form-check-input" type="radio" id="option-entrepreneur" name="option" value="entrepreneur"
               {{#if options.entrepreneur}} checked {{/if}}>
             <label class="form-check-label" for="entrepreneur">
               創業家
